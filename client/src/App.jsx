@@ -15,7 +15,7 @@ function App() {
   useEffect(()=> {
     const fetchData = async() => {
         try {
-            const response = await axios.get('https://user-xl8j.onrender.com');
+            const response = await axios.get('https://user-apps.onrender.com');
             dispatch(getUser(response.data));
         } catch(err) {
             console.log(err)
