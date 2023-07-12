@@ -25,7 +25,7 @@ function UpdateUser() {
 
     const handleUpdate = (e) => {
         e.preventDefault()
-        axios.put('https://user-xl8j.onrender.com/'+id, {name, email, phone})
+        axios.put('https://user-apps.onrender.com/'+id, {name, email, phone})
         .then(res => {
             dispatch(updateUser({id, name, email, phone}))
             navigate('/')
