@@ -15,7 +15,7 @@ function CreateUser() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('https://user-xl8j.onrender.com/create', {name, email, phone})
+        axios.post('https://user-apps.onrender.com/create', {name, email, phone})
         .then(res => {
             dispatch(addUser(res.data))
             navigate('/')
